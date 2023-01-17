@@ -1,19 +1,16 @@
-import requests
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+from enum import Enum
+
 from bs4 import BeautifulSoup
-import pandas as pd
-import time 
+import requests
 
 
 busca=input('Qual será a pesquisa de hoje?: ')
+principal='https://lista.mercadolivre.com.br/'
 
-for limit in range(1, 152, 51):
+resposta=(principal+busca)
+navegador= webdriver.Firefox()
+navegador.get(resposta)
 
-    lista_compras=[]
-
-    principal='https://lista.mercadolivre.com.br/'
-
-    #print(principal+busca)
-
-    resposta= requests.get(principal+busca+'_Desde_{}_NoIndex_True'.format(limit) )
-
-print()
