@@ -1043,3 +1043,62 @@ ATTENTION: default value of option mesa_glthread overridden by environment.
 Read port: 46147
 1673959812941	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileycf2rv/search.json.mozlz4", (void 0)))
+1673981369394	geckodriver	INFO	Listening on 127.0.0.1:53811
+1673981370027	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "window=size=600,600" "-no-remote" "-profile" "/tmp/rust_mozprofileCwxYop"
+Gtk-Message: 15:49:30.070: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673981371527	Marionette	INFO	Marionette enabled
+1673981371532	Marionette	INFO	Listening on port 37653
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 37653
+1673981371848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCwxYop/search.json.mozlz4", (void 0)))
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 3726 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673982029922	Marionette	INFO	Stopped listening on port 37653
+1673982257101	geckodriver	INFO	Listening on 127.0.0.1:60685
+1673982258000	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "window=size=600,600" "-no-remote" "-profile" "/tmp/rust_mozprofilevwVApq"
+Gtk-Message: 16:04:18.031: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673982258908	Marionette	INFO	Marionette enabled
+1673982258912	Marionette	INFO	Listening on port 42361
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 42361
+1673982259159	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevwVApq/search.json.mozlz4", (void 0)))
+1673982323351	geckodriver	INFO	Listening on 127.0.0.1:59917
+1673982324280	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "window=size=600,600" "-no-remote" "-profile" "/tmp/rust_mozprofileCu6scf"
+Gtk-Message: 16:05:24.319: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673982325211	Marionette	INFO	Marionette enabled
+1673982325215	Marionette	INFO	Listening on port 34967
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 34967
+1673982325374	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCu6scf/search.json.mozlz4", (void 0)))
+JavaScript warning: https://pagead2.googlesyndication.com/bg/sU6CjPDj0xr2jbZF4y7IwEoRNSn0ddnQS8nRuvxnxiY.js line 2 > eval line 3314 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673982441314	Marionette	INFO	Stopped listening on port 42361
+1673983019007	geckodriver	INFO	Listening on 127.0.0.1:43811
+1673983019937	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "window=size=600,600" "-no-remote" "-profile" "/tmp/rust_mozprofileY6R75S"
+Gtk-Message: 16:16:59.978: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673983020850	Marionette	INFO	Marionette enabled
+1673983020854	Marionette	INFO	Listening on port 34693
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 34693
+1673983021026	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileY6R75S/search.json.mozlz4", (void 0)))
+1673983499623	geckodriver	INFO	Listening on 127.0.0.1:44129
+1673983500544	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "window=size=600,600" "-no-remote" "-profile" "/tmp/rust_mozprofileSifT8H"
+Gtk-Message: 16:25:00.579: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673983501488	Marionette	INFO	Marionette enabled
+1673983501492	Marionette	INFO	Listening on port 42005
+Read port: 42005
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673983501689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSifT8H/search.json.mozlz4", (void 0)))
