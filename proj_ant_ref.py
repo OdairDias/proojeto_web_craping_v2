@@ -4,25 +4,29 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time 
 
+lista_compras=[]
+
+principal='https://lista.mercadolivre.com.br/'
 
 busca=input('Qual será a pesquisa de hoje?: ')
+#print(principal+busca)
 
-for limit in range(1, 152, 51):
 
-    lista_compras=[]
+num_loop = int(input('Digite o número de Páginas: '))
 
-    principal='https://lista.mercadolivre.com.br/'
+pages_increment = ['0','','51']
+pages_increment = [str(i) for i in range(0, int(pages_increment[-1])+51, 51)]
 
-    #print(principal+busca)
+for x in range(0,num_loop):
 
-    resposta= requests.get(principal+busca+'_Desde_{}_NoIndex_True'.format(limit) )
+    resposta= requests.get(principal+busca+'_Desde_'+pages_increment[x]+'_DisplayType_LF')
 
     ml=BeautifulSoup(resposta.text, 'html.parser')
 
-    produtos=  ml.find_all( 'div', attrs= {'class':"andes-card andes-card--flat andes-card--default ui-search-result shops__cardStyles ui-search-result--core andes-card--padding-default"})
+    produtos=  ml.findAll( 'div', attrs= {'class':"andes-card andes-card--flat andes-card--default ui-search-result shops__cardStyles ui-search-result--core andes-card--padding-default"})
 
     for produto in produtos:
-
+    
         nome_produto=produto.find('h2', attrs={'class':'ui-search-item__title'})
 
         link_produto=produto.find('a', attrs={'class':'ui-search-link'})
@@ -34,7 +38,7 @@ for limit in range(1, 152, 51):
         if (preço_produtocentavos):
             preçototal=(preço_produtoreal.text  + ',' + preço_produtocentavos.text)
         else:
-         preçototal=(preço_produtoreal.text) 
+            preçototal=(preço_produtoreal.text) 
 
 
         if(preço_produtocentavos):
@@ -43,11 +47,6 @@ for limit in range(1, 152, 51):
         else:
             lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href']])
         time.sleep(1)
-
-    
-
-    
-
 # print(ml.ar prettify())
     #print("Nome do Produto: ",nome_produto.text) 
     #print('link do produto:',link_produto['href'])

@@ -2,7 +2,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import requests
 import time
-
+import htmllib
+requirements.txt
 lista_compras=[]
 
 principal='https://lista.mercadolivre.com.br/'
@@ -10,7 +11,6 @@ principal='https://lista.mercadolivre.com.br/'
 busca=input('Qual será a pesquisa de hoje?: ')
 #print(principal+busca)
 
-resposta= requests.get(principal+busca)
 
 ml=BeautifulSoup(resposta.text, 'html.parser')
 
