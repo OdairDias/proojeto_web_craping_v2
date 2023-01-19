@@ -14,10 +14,12 @@ busca=input('Qual será a pesquisa de hoje?: ')
 
 num_loop = int(input('Digite o número de Páginas: '))
 
+
+
 #aqui estamos limitando o número de paginas a no máximo 11 
 # caso queira mais paginas basta acrescentar a aprtir da 551 sempre de 50, a baixo a próxima seria por exemplo a 601 
 
-pages_increment = ['0','51','101','151','201','251','301','351','401','501','551']
+pages_increment = ['0','51','101']
 
 for x in range(0,num_loop):
 
