@@ -45,12 +45,15 @@ for x in range(0,num_loop):
         else:
             preçototal=(preço_produtoreal.text) 
 
-
+        delivery= produto.find('p',attrs={'ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free'})
+        
+        #<p class="ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free">Frete grátis</p>
+        
         if(preço_produtocentavos):
 
-            lista_compras.append([nome_produto.text,preçototal,link_produto['href']])
+            lista_compras.append([nome_produto.text,preçototal,link_produto['href'], delivery])
         else:
-            lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href']])
+            lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href'],delivery])
         time.sleep(1)
 # print(ml.ar prettify())
     #print("Nome do Produto: ",nome_produto.text) 
@@ -62,7 +65,7 @@ for x in range(0,num_loop):
     #print('\n\n')
 
 
-pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto'])
+pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto','Frete'])
 print(pesquisa)
 
 #pesquisa.to_excel('resultado_pesquisa.xlsx', index=False)
