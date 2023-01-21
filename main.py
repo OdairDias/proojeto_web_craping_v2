@@ -45,15 +45,23 @@ for x in range(0,num_loop):
         else:
             preçototal=(preço_produtoreal.text) 
 
-        delivery= produto.find('p',attrs={'ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free'})
-        
+        #delivery= produto.findAll('p',attrs={'ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free'})[-1].text
+    
+        def find_delivery(produto):
+            delivery = produto.findAll('p', attrs={'ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free'})
+            if delivery:
+                return delivery[-1].text
+            else:
+                return "Frete a Contratar"
+
+
         #<p class="ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free">Frete grátis</p>
         
         if(preço_produtocentavos):
 
-            lista_compras.append([nome_produto.text,preçototal,link_produto['href'], delivery])
+            lista_compras.append([nome_produto.text,preçototal,link_produto['href'], find_delivery(produto)])
         else:
-            lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href'],delivery])
+            lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href'],find_delivery(produto)])
         time.sleep(1)
 # print(ml.ar prettify())
     #print("Nome do Produto: ",nome_produto.text) 
@@ -66,6 +74,6 @@ for x in range(0,num_loop):
 
 
 pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto','Frete'])
-print(pesquisa)
+#print(pesquisa)
 
-#pesquisa.to_excel('resultado_pesquisa.xlsx', index=False)
+pesquisa.to_excel('resultado_pesquisa.xlsx', index=False)
