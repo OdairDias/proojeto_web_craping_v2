@@ -1,4 +1,4 @@
-# Proojeto_web_craping_v2
+# Proojeto_web_scraping_v2
 
 Esta é a Segunda versão do projeto de web scraping do site Mercado Livre
 
