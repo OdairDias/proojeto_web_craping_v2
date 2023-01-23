@@ -43,7 +43,7 @@ for x in range(0,num_loop):
         if (preço_produtocentavos):
             preçototal=(preço_produtoreal.text  + ',' + preço_produtocentavos.text)
         else:
-            preçototal=(preço_produtoreal.text) 
+            preçototal=(preço_produtoreal.text +','+ '00') 
 
         #delivery= produto.findAll('p',attrs={'ui-search-item__shipping ui-search-item__shipping--free shops__item-shipping-free'})[-1].text
     
@@ -76,4 +76,4 @@ for x in range(0,num_loop):
 pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto','Frete'])
 #print(pesquisa)
 
-pesquisa.to_excel('resultado_pesquisa.xlsx', index=False)
+pesquisa.to_excel('resultado_pesquisa.xlsx')
