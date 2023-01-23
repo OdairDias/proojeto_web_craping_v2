@@ -74,6 +74,6 @@ for x in range(0,num_loop):
 
 
 pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto','Frete'])
-#print(pesquisa)
+print(pesquisa)
 
-pesquisa.to_excel('resultado_pesquisa.xlsx')
+#pesquisa.to_excel('resultado_pesquisa.xlsx')
