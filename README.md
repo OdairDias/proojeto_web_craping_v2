@@ -8,8 +8,8 @@ Web scraping é uma habilidade valiosa para quem trabalha com dados, pois permit
 
 Com essa capacidade de coletar e processar esses dados, podemos identificar tendências, fazer previsões e tomar decisões baseadas em dados mais recentes e precisos. Isso é especialmente importante em um mundo cada vez mais conectado, onde a quantidade de informações disponíveis é cada vez maior. A habilidade de extrair essas informações de forma eficiente e precisa é crucial para a tomada de decisões informadas. Portanto, é omportante para o analista de dados estar familiarizado com a técnica de web scraping para aproveitar ao máximo as informações disponíveis.
 
-# Explicando o código
-No main.py definimos um link da pesquisa, em seguida é solcitado qual produto desejamos pesquisar. A estrutura dentro site Mecado livre
+# Explicando o código 
+Para este exemplo usamos o termo de pesquisa 'Bicicleta", no arquivomain.py definimos um link da pesquisa, em seguida é solcitado qual produto desejamos pesquisar. A estrutura dentro site Mecado livre
 é padrão, por isso cosneguimos pesquisar ppor uma infinidade de produtos, em seguida é solicitado o número de paginas a ser pesquisada
 por via de regra, o site apresenta até 40 paginas,porém caso a pessoa queira pesquisar por menos, também é possível.
 
@@ -33,4 +33,5 @@ Agora temos a parte de análise dos dados, geramos um notebook, onde analisamos 
 
 *Por ultimo estamos verificando quantos produtos possuem frete gratis ou não, dentro do nosso conjunto de dados*
 
-## O resultado da pesauisa pode ser visto acessando notebok que acomapnha este aquivo.
+
+
