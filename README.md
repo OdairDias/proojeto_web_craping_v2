@@ -32,6 +32,6 @@ Agora temos a parte de análise dos dados, geramos um notebook, onde analisamos 
  -> *Ordenamos os dez valores de menor valor dentro do nosso conjunto de dados*
 
  -> *Por ultimo estamos verificando quantos produtos possuem frete gratis ou não, dentro do nosso conjunto de dados*
-
-
+ 
+### Resultado da análise pode ser visto acessando o arquivo "analise_dados_coletatos.ipynb"
 
