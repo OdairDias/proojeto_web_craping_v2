@@ -21,17 +21,17 @@ Agora temos a parte de análise dos dados, geramos um notebook, onde analisamos 
 
  -> *importamos os dados*
 
-  *Verificamos nosso DataFrame, quais os tipos de dados estamos trabalhaando*
+ -> *Verificamos nosso DataFrame, quais os tipos de dados estamos trabalhaando*
 
-*Tratamento dos dados tranformando a ##variavel### "preço do produto" do tipo object para tipo float*
+ -> *Tratamento dos dados tranformando a ##variavel### "preço do produto" do tipo object para tipo float*
 
- *mostramos qual produto foi o mais recorrente dentro do nosso conjunto de dados*
+  -> *mostramos qual produto foi o mais recorrente dentro do nosso conjunto de dados*
 
-*Ordemanos os dez produtos de maior vaalor dentro do nosso conjunto de dados*
+ -> *Ordemanos os dez produtos de maior vaalor dentro do nosso conjunto de dados*
 
-*Ordenamos os dez valores de menor valor dentro do nosso conjunto de dados*
+ -> *Ordenamos os dez valores de menor valor dentro do nosso conjunto de dados*
 
-*Por ultimo estamos verificando quantos produtos possuem frete gratis ou não, dentro do nosso conjunto de dados*
+ -> *Por ultimo estamos verificando quantos produtos possuem frete gratis ou não, dentro do nosso conjunto de dados*
 
 
 
