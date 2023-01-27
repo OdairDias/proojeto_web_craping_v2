@@ -62,7 +62,7 @@ for x in range(0,num_loop):
             lista_compras.append([nome_produto.text,preçototal,link_produto['href'], find_delivery(produto)])
         else:
             lista_compras.append([nome_produto.text,preço_produtoreal.text,link_produto['href'],find_delivery(produto)])
-        time.sleep(1)
+        #time.sleep(1)
 # print(ml.ar prettify())
     #print("Nome do Produto: ",nome_produto.text) 
     #print('link do produto:',link_produto['href'])
@@ -76,4 +76,4 @@ for x in range(0,num_loop):
 pesquisa=pd.DataFrame(lista_compras,columns=['Produto','Preço produto','Link produto','Frete'])
 print(pesquisa)
 
-#pesquisa.to_excel('resultado_pesquisa.xlsx')
+pesquisa.to_excel('resultado_pesquisa.xlsx')
